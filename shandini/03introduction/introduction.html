@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+  <title>公司简介</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../style-head.css">
+  <link rel="stylesheet" href="introduction.css">
+  <style>
+    #bmap{width: 600px;height: 400px;border: 1px solid #333;margin: 10px auto;}
+  </style>
+</head>
+<body>
+<header></header>
+<section>
+  <div id="intro">
+    <div id="intro_top">
+      <p class="lf">
+        <b>当前位置：</b>
+        <a href="#">首页</a>&gt;
+        <a href="#">公司简介</a>
+      </p>
+
+      <p class="rt">
+        公司简介
+      </p>
+    </div>
+  </div>
+  <div id="intro_contant">
+    <p>
+      浙江珊蒂妮园艺科技开发有限公司成立于2011年（原2004年注册嘉兴市珊蒂妮园林绿化工程有限公司搬迁）,目前注册资本为1000万元。公司主要生产培育无土栽培室内花卉、生产无土栽培高科技肥料、生产无土栽培及半水培实用新型花盆。公司主要经营范围：花卉苗木培育、蔬菜瓜果种植及培育；批发、零售、园林绿化、苗木租摆、配送服务、连锁经营；农业休闲观光，农业科技培训；花卉园艺高级培训；智能肥料与新型盆器的进出口业务。
+    </p>
+
+    <p>
+      珊蒂妮公司引进欧洲新型花盆技术，研究开发了560多种新型水培盆器及自投钢制模具130多付，并拥有国内实用新型专利26项。在无土栽培盆器开发生产实力方面走在世界前沿。
+    </p>
+
+    <p> 公司现有专业技术国内外人员50余名，在国内无土栽培领域得到农科院高度评价。在水培肥料生产及配方组合，投入生产使用，达到国内领先水平。同时给国内多家知名农业企业作技术输出及指导服务。
+    </p>
+
+    <p>
+      珊蒂妮公司至2004年引进欧洲无土栽培技术，近十年的技术衔接，市场调研及培育。现公司在金华市拥有培育基地475亩及玻璃温室连栋大棚。在广州、上海、昆明、福建四大苗木生产基地建有公司自己的苗木生产，周转基地。公司通过“土地流转+农民入职+农业大学合作+合作社联动+农业龙头企业带动”的发展模式带动农民发展花卉种植，无公害蔬菜种植，解决大学生创业就业问题带动农民致富。
+    </p>
+
+    <p>
+      公司坚持“创知名品牌，让绿色健康进万家”为宗旨，自推出专业提供绿色家庭、单位、公务活动场所的花卉摆放设计，租摆、植摆等服务以来，由于在质量服务上的领先地位和良好的企业形象，博得了广大客户的好评。
+    </p>
+
+    <p>
+      公司未来的远景目标是发展规模化联合经营，走品牌之路，使珊蒂妮成为浙江乃至全国的知名品牌。
+    </p>
+
+    <p class="text_footer">
+      <span class="notu">   无土栽培基地</span><br>
+      <span class="professional">   专业的生产基地，先进的生产技术，培育优质健康，无土无菌的植株！</span><br>
+      <span class="green_furniture">   珊蒂妮为您精心打造“绿色家具”！</span>
+    </p>
+  </div>
+  <div id="bmap"></div>
+</section>
+<footer></footer>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/introduction.js"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=yaZ6QyeLKmmcGbhQQDRbAd04h6MLV7bn">
+</script>
+<script>
+  var map = new BMap.Map("bmap");
+  var point = new BMap.Point(120.037174,29.174069);
+  map.centerAndZoom(point, 17);  //1~19
+
+  //启用滚轮地图缩放
+  map.enableScrollWheelZoom(true);
+  //添加地图控件
+  map.addControl(new BMap.NavigationControl()); //导航控件
+  map.addControl(new BMap.ScaleControl()); //缩放控件
+  map.addControl(new BMap.OverviewMapControl()); //预览图控件
+  map.addControl(new BMap.MapTypeControl()); //地图类型控
+  //添加地图上覆盖物(Overlay)
+  var marker = new BMap.Marker(point);  //标记
+  marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+  map.addOverlay(marker);
+  var icon = new BMap.Icon('../images/logo_bmap.jpg',new BMap.Size(50,80));
+  var marker = new BMap.Marker(point, {icon: icon});
+  map.addOverlay(marker);
+  //添加信息提示窗口
+  var w = new BMap.InfoWindow('义乌市佛堂镇光明村浙江珊蒂妮园艺科技公司',{title:'地址'});
+  map.openInfoWindow(w, map.getCenter())
+</script>
+</body>
+</html>

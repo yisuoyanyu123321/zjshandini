@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>所有花卉</title>
+  <link rel="icon" href="../../images/favicon.ico">
+  <link rel="stylesheet" href="../../style-head.css">
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="../../jquery-ui-1.11.4/jquery-ui.css"/>
+</head>
+
+<body>
+<header></header>
+<section>
+  <!--产品分类-->
+  <div id="product_nav">
+    <ul id="nav_small">
+      <li><b></b><a href="flower_small.html" class="small">小型花卉</a></li>
+      <li><b></b><a href="flower_middle.html" class="middle">中型花卉</a></li>
+      <li><b></b><a href="flower_large.html" class="large">大型花卉</a></li>
+      <li><b></b><a href="#" class="all">所有花卉</a></li>
+    </ul>
+    <ul id="login" class="lf">
+      <li>您好！欢迎来到珊蒂妮</li>
+      <li class="done"><a href="#">[登录]</a></li>
+      <li class="esc"><a href="#">[退出]</a></li>
+      <li class="login"><a href="register.html">[注册]</a></li>
+      <li class="settle_up"><a href="#">[结算]</a></li>
+    </ul>
+    <button class="rt" id="search">搜索</button>
+    <input class="rt" id="kw" value="请输入搜索关键字！">
+  </div>
+  <!--产品目录-->
+  <div id="product_summary" class="lf">
+    <ul id="summary">
+      <a href="#">
+        <li class="summary">产品目录</li>
+      </a>
+      <a href="../02Scene_shows/Scene.html">
+        <li>场景展示</li>
+      </a>
+      <a href="../03flower_pot/flower pot.html">
+        <li>盆器品种</li>
+      </a>
+      <a href="../04new_product/new product.html">
+        <li>新品展示</li>
+      </a>
+    </ul>
+  </div>
+  <!--图片列表-->
+  <div id="img-list">
+    <div id="product-list"></div>
+    <p class="rt" id="pages">
+      <!--<a href="" class="preview">1</a>
+      <a href="">2</a>
+      <i>...</i>
+      <a href="">16</a>
+      <a href="">17</a>
+      <a href="">›</a>
+      <a href="">»</a>-->
+    </p>
+  </div>
+  <div class="modal" style="display:none">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <h4>用户登录</h4>
+
+        <p class="alert">
+          请在此处输入您的注册信息。
+        </p>
+
+        <form id="login-form">
+          <input type="text" placeholder="请输入登录用户名" name="uname" value="tom">
+          <input type="password" placeholder="请输入登录密码" name="upwd" value="123456">
+          <input type="button" value="提交登录信息" id="bt-login">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer></footer>
+<script src="../../js/jquery-1.11.3.js"></script>
+<script src="../../jquery-ui-1.11.4/jquery-ui.js"></script>
+<script src="../../js/product_list.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/*养护知识-顶部导航*/
+#itroduc_top{
+	background:#669934;
+	padding:5px 10px;
+	overflow:hidden;
+	line-height:38px;
+}
+#itroduc_top p a{
+	color:#000;
+}
+#itroduc_top>p>a:hover{
+	color:#f00;
+}
+#itroduc_top p.rt{
+	color:#fff;
+	font-size:16px;
+	font-weight:bold;
+	margin-right:15px;
+}
+/*养护知识-文本*/
+#show_text{
+	margin-top:20px;
+	margin-bottom:50px;
+}
+#show_text p{
+	line-height:30px;
+	font-size:14px;
+	text-indent:2em;
+}
+#show_text p.howto{
+	text-align:center;
+	color:#fff;
+	background:#00B050;
+	margin:50px 0 20px 0;
+}
+

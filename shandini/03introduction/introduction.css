@@ -1,0 +1,44 @@
+/*公司简介-顶部导航*/
+#intro_top{
+	background:#669934;
+	padding:5px 10px;
+	overflow:hidden;
+	line-height:38px;
+}
+#intro_top p a{
+	color:#000;
+}
+#intro_top>p>a:hover{
+	color:#f00;
+}
+#intro_top p.rt{
+	color:#fff;
+	font-size:16px;
+	font-weight:bold;
+	margin-right:15px;
+}
+/*公司简介-文本*/
+#intro_contant>p{
+	font-size:16px;
+	text-indent:2em;
+}
+#intro_contant>p.text_footer{
+	margin:10px 0 50px 0;
+	line-height:40px;
+}
+#intro_contant>p.text_footer span{
+	font:24px '宋体';
+	color:rgb(255,255,255);
+	background:rgb(51,153,51);
+	font-weight:bold;
+}
+#intro_contant>p.text_footer span.notu{
+	font-size:32px;
+}
+#intro_contant>p.text_footer span.professional{
+	margin-left:80px;
+}
+#intro_contant>p.text_footer span.green_furniture{
+	background:rgb(0,153,0);
+	margin-left:380px;
+}

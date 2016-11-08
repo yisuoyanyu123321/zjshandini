@@ -1,0 +1,163 @@
+@charset "utf-8";
+section{min-height: 100px;}
+/*花卉分类*/
+#product_nav{
+	float:left;
+	overflow:hidden;
+	margin:0 0 10px 175px;
+	width:827px;
+}
+#product_nav ul>li{
+	float:left;
+	margin-left:10px;
+}
+#product_nav ul>li>b{
+	display:inline-block;
+	height:0;
+	border:5px solid #F20703;
+	border-radius:5px;
+	margin-right:10px;
+}
+#product_nav ul>li>a{
+	color:#568A0C;
+	font-size:14px;
+	font-weight:bold;
+}
+#product_nav input{
+	height:30px;
+	line-height:30px;
+	padding:0 5px;
+	color:#999;
+}
+#product_nav button{
+	height:25px;
+	background-color:#508707;
+	border:0;
+	color:#fff;
+	width:80px;
+	font-weight:bold;
+}
+/*产品目录*/
+#product_summary{
+	overflow:hidden;
+	width:170px;
+	text-align:center;
+	font-size:14px;font-weight:bold;
+	
+}
+#summary{
+	border:1px solid #75A538;
+	background-color:#fff;
+}
+#summary li{
+	line-height:30px;
+}
+#summary a{
+	color:#568A0C;
+}
+#summary a li.summary{background-color:#75A538;color:#fff;}
+#summary a li:hover{color:#fff;background-color:#568A0C;}
+/*产品详情*/
+#product_detail{
+	border:1px solid #75A538;
+	width:820px;height:670px;
+	padding:10px;
+	box-sizing:border-box;
+	position:relative;	
+}
+#product_detail>p.imgName{
+	text-align:center;
+	font-size:16pt;
+	color:#999;
+	margin-bottom:10px;
+}
+#product_detail div.img{
+	text-align:center;
+	vertical-align:middle;}
+#product_detail div.img>a>img{width:600px;height:500px;}
+#product_detail div.img>p{
+	z-index:10;
+	display:none;
+}
+#product_detail div.img>p:target{display:block;}
+#product_detail div.img>p>a>img.first{
+	width:834px;height:557px;
+	position:absolute;top:-40px;left:-205px;
+	box-shadow:0 0 25px #9C9C9C;
+}
+#product_detail div.img>p>a>img.close{
+	width:25px;height:25px;
+	position:absolute;top:-55px;left:-215px;
+}
+#product_detail div.img>p>span{
+	display:inline-block;
+	width:80px;height:25px;line-height:25px;
+	font-size:14px;color:#fff;font-weight:bold;
+	background-color:#3A3F39;opacity:0.8;
+	position:absolute;top:520px;left:190px;
+	text-align:center;border-radius:8px;
+}
+#feet{
+	width:780px;
+	clear:both;
+	float:left;
+	margin-top:10px;
+}
+#feet p span,#feet p a{
+	color:#666;
+}
+#feet>p{
+	padding:10px 0;
+	border-top:1px dotted #ccc;
+}
+#feet div.footer{
+	border:1px dotted #ccc;
+	clear:both;
+	padding:15px 0 15px 15px;
+	position:relative;
+	background:#F7F7F7;
+}
+#feet div.footer p span{
+	color:#333;
+}
+#feet div.footer p.prev a,#feet div.footer p.next a{color:#995F2E;}
+#feet div.footer p.prev a:hover{color:#f00;}
+#feet div.footer p.next a:hover{color:#f00;}
+#feet div.footer>a{
+	display:inline-block;
+	width:70px;height:30px;line-height:30px;
+	position:absolute;top:20%;right:0;
+	background-color:#B5B5B5;
+	color:#fff;text-align:center;
+}
+/*场景展示*/
+#cj {
+	border: 1px solid #75A538;
+	float: right;
+	width: 820px;
+	padding: 20px 20px 20px 10px;
+	box-sizing: border-box;
+	background: #fff;
+	position: relative;
+}
+
+#cj > dl {
+	float: left;
+	margin: 0 0 20px 12px;
+	text-align: center;
+}
+
+#cj > dl > dt > a > img:hover {
+	opacity: 0.5;
+	/*页码*/
+}
+#cj p.pages>a{
+	padding: 3px 8px;
+	border: 1px solid #eee;
+	color: #333;
+}
+#cj p.pages>a.active{
+	background: #B2E05D;
+	color: #fff;
+}
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/04product_introduction/01product_summary/register.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/cart_detail.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/cart_update.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/flower_detail.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/flower_small.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/search_feedback.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/search_result.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/shopcart_delete.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/customer.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/flower_detail.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/product_large_list.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/product_middle_list.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/product_small_list.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/search-result.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/shoppingcart.js" charset="UTF-8" />
+  </component>
+</project>

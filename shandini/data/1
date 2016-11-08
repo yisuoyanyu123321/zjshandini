@@ -1,0 +1,8 @@
+if ($(this).prop('checked')) {
+      x = -1;
+    } else {
+      x = 1;
+      $("#cart>thead input[type='checkbox']").prop('checked', false);
+    }
+      totalPrice += Math.round(span[i].innerHTML) * x;
+    $("#cart_footer>div>span").html('?' + totalPrice);

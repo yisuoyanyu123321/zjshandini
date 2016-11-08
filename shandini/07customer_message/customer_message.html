@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>客户留言</title>
+  <link rel="icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="customer_message.css">
+  <link rel="stylesheet" href="../style-head.css">
+</head>
+
+<body>
+<header></header>
+<section>
+  <div id="itroduc">
+    <div id="itroduc_top">
+      <p class="lf">
+        <b>当前位置：</b>
+        <a href="#">首页</a>&gt;
+        <a href="#">客户留言</a>
+      </p>
+
+      <p class="rt">
+        客户留言
+      </p>
+    </div>
+    <div id="pages">
+
+      <h3><b></b>提交留言</h3>
+    </div>
+  </div>
+  <form method="POST" name="myform"
+        action="" target="_self" id="customer">
+    <p><b>姓名</b><input name="txtName" id="uname" maxlength="12" autofocus><span>*</span>
+      <span class="active">请输入您的姓名</span>
+
+    <p>
+
+    <p><b>性别</b><input name="rdoGender" type="radio" value="男" checked clsss="gender" class="gender">男
+      <input name="rdoGender" type="radio" value="女" clsss="gender" class="gender">女</p>
+
+    <p><b>电话</b><input name="txtTel" type="number" id="tel"><span>*</span>
+      <span class="active">请输入您的号码</span></p>
+
+    <p><b>Email</b><input name="txtName" type="email" id="email"><span></span></p>
+
+    <p><b>QQ</b><input name="txtQQ"><span class="weixin" id="qq">微信号、MSN等</span></p>
+
+    <p>
+      <b>选择头像</b>
+      <a href="#"><img src="../images/face1.gif"></a>
+      <a href="#"><img src="../images/face2.gif"></a>
+      <a href="#"><img src="../images/face3.gif"></a>
+      <a href="#"><img src="../images/face4.gif"></a>
+      <a href="#"><img src="../images/face5.gif"></a>
+      <a href="#"><img src="../images/face6.gif"></a>
+      <a href="#"><img src="../images/face7.gif"></a>
+    </p>
+
+    <p><b class="content">留言内容</b><textarea></textarea><span>*</span></p>
+
+    <p><b>验证码</b><input name="txtName" class="yzm"><img src="../data/vcode.php" alt=""/>
+
+    <p>
+      <!--提交按钮-->
+
+    <p><b></b><input class="sub" type="submit" value="提交留言" style="color:#fff">
+
+    <p>
+  </form>
+</section>
+<footer></footer>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/customer.js"></script>
+</body>
+</html>

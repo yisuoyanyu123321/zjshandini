@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>用户注册</title>
+  <link rel="icon" href="../../images/favicon.ico">
+  <link rel="stylesheet" href="../../style-head.css">
+  <link rel="stylesheet" href="register.css"/>
+</head>
+<body>
+<!--页头-->
+<header></header>
+<!--主体-->
+<section>
+  <div class="main">
+    <video src="snow.mp4" autoplay loop muted></video>
+    <div class="container"></div>
+  </div>
+  <!--页尾-->
+  <div class="footer">
+    <div class="container">
+      <div class="form-container">
+        <h2>欢迎注册</h2>
+        <form id="form-register">
+          <div class="form-group">
+            <label for="uname">用户名：</label>
+            <input name="uname" id="uname" autofocus required maxlength="12"/>
+            <span id="uname-msg">用户名(6-12位）中可以包含数字或字母</span>
+          </div>
+          <div class="form-group">
+            <label for="upwd">密码：</label>
+            <input type="password" name="upwd" id="upwd" required maxlength="12" min="6"
+                   pattern="^\d{6,12}$"/>
+            <span id="upwd-msg">密码长度在6~12位之间</span>
+          </div>
+          <div class="form-group">
+            <label for="email">邮箱：</label>
+            <input type="email" name="email" id="email" required/>
+            <span id="email-msg">请输入合法的邮箱格式</span>
+          </div>
+          <div class="form-group">
+            <label for="homepage">个人主页：</label>
+            <input type="url" name="homepage" id="homepage"/>
+            <span id="homepage-msg">个人主页必须符合URL格式</span>
+          </div>
+          <div class="form-group">
+            <label for="age">年龄：</label>
+            <input type="number" min="18" max="60" name="age" id="age"/>
+            <span id="age-msg">年龄必须在18~60之间</span>
+          </div>
+          <div class="form-group">
+            <label for="birthday">生日：</label>
+            <input type="date" name="birthday" id="birthday" min="1949/10/01" max="2020/01/01"/>
+            <span id="birthday-msg">请选择生日</span>
+          </div>
+          <div class="form-group">
+            <input id="bt-register" type="button" value="提交注册信息"/>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer></footer>
+<script src="../../js/jquery-1.11.3.js"></script>
+<script src="../../js/register.js"></script>
+
+</body>
+</html>

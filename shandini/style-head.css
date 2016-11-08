@@ -1,0 +1,174 @@
+/*通用样式*/
+body {
+  font: 12px/1.8 '微软雅黑', '宋体';
+  color: #000;
+  margin: 0
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, ul, p, dl, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  border: 0;
+}
+
+.lf {
+  float: left;
+}
+
+.rt {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/*body背景*/
+body {
+  width: 100%;
+  border-top: 5px solid #508707;
+  border-bottom: 10px solid #508707;
+  background-color: #ECFFE9;
+  overflow-x: hidden;
+}
+
+header, section, footer {
+  width: 1003px;
+  margin: 0 auto;
+}
+footer{margin-top: 20px;}
+/*语言*/
+header {
+  height: 129px;
+  margin-bottom: 10px;
+}
+
+#language {
+  float: right;
+  margin-top: 45px;
+}
+
+#language ul {
+  border-top: 1px solid #528608;
+  border-left: 1px solid #528608;
+  background-color: #fff;
+  width: 230px;
+  height: 35px;
+  line-height: 35px;
+}
+
+#language ul li {
+  float: left;
+  margin: 0 5px;
+}
+
+#language ul li.language_left {
+  margin-left: 20px;
+}
+
+#language ul li a {
+  color: #333;
+}
+
+#language ul li a:hover {
+  color: #f00;
+}
+
+/*导航*/
+#nav {
+  float: right;
+  background: #508707;
+  width: 832px;
+  padding: 2px;
+}
+
+#nav ul a li {
+  float: left;
+  color: #fff;
+  padding: 8px 16px;
+  width: 86px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#nav ul a li:hover {
+  background-color: #fff;
+  color: #528608;
+}
+
+/*在线咨询QQ*/
+#qq_consult {
+  padding: 10px;
+  border: 2px solid #2FD32D;
+  float: right;
+  position: fixed;
+  right: 0;
+  top: 200px;
+  width: 150px;
+  border-radius: 5px;
+  background-image: linear-gradient(0deg,#C3F3C3,#ECFFE9);
+}
+
+.online > b {
+  color: #048720;
+  font-size: 16px;
+}
+
+.online > span {
+  float: right;
+  color: #46C046;
+  border: 1px solid #61B661;
+  border-radius: 50%;
+  width: 15px;height: 15px;
+  text-align: center;
+  line-height: 15px;
+  cursor: pointer;
+}
+
+#qq_consult div.consult {
+  width: 146px;
+  border: 1px solid #2fd32d;
+  border-top-width: 2px;
+  background: #fff;
+}
+
+div.consult > p {
+  padding: 5px 10px;
+}
+/*底部样式*/
+footer{
+  overflow:hidden;
+  line-height:25px;
+  height:150px;
+}
+#foot{
+  float:left;
+  margin-left:30px;
+  color:#333;
+}
+#foot ul li{
+  float:left;
+  margin-right:15px;
+}
+#foot a{
+  color:#333;
+}
+#foot a:hover{
+  color:#f00;
+  text-decoration:underline;
+}
+#foot p span.copy{margin-right:55px;}
+#foot p span.tel{margin-right:145px;}
+#foot p span.qq{margin-right:20px;}

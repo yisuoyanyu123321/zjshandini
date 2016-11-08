@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>结算</title>
+    <link rel="icon" href="../../images/favicon.ico">
+<link rel="stylesheet" href="../../style-head.css">
+ <link rel="stylesheet" href="shoppingcart.css">
+    <style>
+        body{border-bottom: 0;}
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <section>
+        <div id="main">
+            <table id="cart">
+                <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" id="selAll"/>
+                        <label for="selAll">全选</label>
+                    </th>
+                    <th>商品</th>
+                    <th>单价（元）</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div id="cart_footer">
+                <div>
+                    <b>总价：</b><span></span>
+                    <button id="to_pay">去付款</button>
+                </div>
+            </div>
+        </div>
+     </section>
+     <footer></footer>
+    <script src="../../js/jquery-1.11.3.js"></script>
+    <script src="../../js/shoppingcart.js"></script>
+</body>
+</html>

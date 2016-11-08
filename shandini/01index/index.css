@@ -1,0 +1,19 @@
+#slider{
+	width:1000px;
+	position:relative;
+	overflow:hidden;
+	position: relative;
+	height:500px;
+}
+#slider li{float:left;}
+#slider_images{width:5000px;position:absolute;top:0;left:0;}
+#slider_images>li>a>img{width:1000px;}
+#slider_pages{position:absolute;bottom:15px;left:430px;}
+#slider_pages>li{
+	border:2px solid transparent;border-radius:50%;
+	width:10px;height:10px;
+	margin-left:20px;display:inline-block;
+	background: #fff;opacity: .9;
+	pointer:cursor;
+}
+#slider_pages>li.hover{background: transparent;border:2px solid #eee;}
